@@ -1,0 +1,8 @@
+/etc/:
+/etc/xdg/menus/applications-merged:
+/etc/xdg/menus:
+/etc/xdg:
+applications-merged
+menus
+waydroid.menu
+xdg
