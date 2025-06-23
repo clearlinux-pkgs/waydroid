@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : waydroid
-Version  : 1.5.2
-Release  : 5
-URL      : https://github.com/waydroid/waydroid/archive/1.5.2/waydroid-1.5.2.tar.gz
-Source0  : https://github.com/waydroid/waydroid/archive/1.5.2/waydroid-1.5.2.tar.gz
+Version  : 1.5.3
+Release  : 6
+URL      : https://github.com/waydroid/waydroid/archive/1.5.3/waydroid-1.5.3.tar.gz
+Source0  : https://github.com/waydroid/waydroid/archive/1.5.3/waydroid-1.5.3.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause GPL-3.0
@@ -63,15 +63,15 @@ services components for the waydroid package.
 
 
 %prep
-%setup -q -n waydroid-1.5.2
-cd %{_builddir}/waydroid-1.5.2
+%setup -q -n waydroid-1.5.3
+cd %{_builddir}/waydroid-1.5.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1748885063
+export SOURCE_DATE_EPOCH=1750687292
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -105,7 +105,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1748885063
+export SOURCE_DATE_EPOCH=1750687292
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/waydroid
 cp %{_builddir}/waydroid-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/waydroid/31a3d460bb3c7d98845187c716a30db81c44b615 || :
